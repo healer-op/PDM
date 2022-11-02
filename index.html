@@ -244,6 +244,10 @@
                 <a class="nav-link" onclick="moto()">MotorCycle</a>
               </li>
 
+              <li class="nav-item">
+                <a class="nav-link" onclick="edm()">⭐EDM</a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -305,6 +309,11 @@
 
             </div>
 
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="edm">
+
+
+            </div>
+
         </div>
     </div>
     </main>
@@ -336,6 +345,7 @@
         document.getElementById("muscle").style.display = "none";
         document.getElementById("vans").style.display = "none";
         document.getElementById("sedan").style.display = "none";
+        document.getElementById("edm").style.display = "none";
         document.getElementById("compact").style.display = "flex";
         function compactcars() {
             audioElement.play();
@@ -348,6 +358,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("muscle").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("compact").style.display = "flex";
         }
 
@@ -362,6 +373,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("super").style.display = "flex";
         }
         function sport() {
@@ -375,6 +387,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("sport").style.display = "flex";
         }
         function moto() {
@@ -388,6 +401,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("moto").style.display = "flex";
         }
         function sportc() {
@@ -401,6 +415,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("sportc").style.display = "flex";
         }
         function Suv() {
@@ -415,6 +430,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "flex";
         }
         function offroad() {
@@ -429,6 +445,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
         function muscle() {
@@ -443,6 +460,7 @@
             document.getElementById("muscle").style.display = "flex";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
         function vans() {
@@ -457,6 +475,7 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "flex";
             document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
         function sedan() {
@@ -471,6 +490,22 @@
             document.getElementById("muscle").style.display = "none";
             document.getElementById("vans").style.display = "none";
             document.getElementById("sedan").style.display = "flex";
+            document.getElementById("edm").style.display = "none";
+            document.getElementById("Suv").style.display = "none";
+        }
+        function edm() {
+            audioElement.play();
+            document.getElementById("compact").style.display = "none";
+            document.getElementById("Suv").style.display = "none";
+            document.getElementById("super").style.display = "none";
+            document.getElementById("sport").style.display = "none";
+            document.getElementById("moto").style.display = "none";
+            document.getElementById("sportc").style.display = "none";
+            document.getElementById("offroad").style.display = "none";
+            document.getElementById("muscle").style.display = "none";
+            document.getElementById("vans").style.display = "none";
+            document.getElementById("sedan").style.display = "none";
+            document.getElementById("edm").style.display = "flex";
             document.getElementById("Suv").style.display = "none";
         }
     </script>
