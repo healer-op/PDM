@@ -8,6 +8,18 @@ fetch('https://script.google.com/macros/s/AKfycbyksyxaz0QORyq_KMeu44XmkCLt2tTwac
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -56,6 +68,18 @@ fetch('https://script.google.com/macros/s/AKfycbwN3pSFosGYLrZ_6OVNtiXLA6MajzNc9c
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -102,9 +126,23 @@ fetch('https://script.google.com/macros/s/AKfycbxGVomDcfvA9OEzez2AFnECLcdz2ki9Qy
         throw Error("ERROR");
     }
     return response.json();})
-.then(data => {
+.then(datas => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
+        
+
         return `
         <div class="col">
                         <div class="card shadow-sm">
@@ -152,6 +190,18 @@ fetch('https://script.google.com/macros/s/AKfycbzH2frGu4ij2GzbVt4v0xabQjsAk6B13b
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -199,6 +249,18 @@ fetch('https://script.google.com/macros/s/AKfycbzjM-HQogzxyBDTR5UNeHUHlawcO_K6kH
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -246,6 +308,18 @@ fetch('https://script.google.com/macros/s/AKfycbyPFZSbxEtd0BQmQ1Ojuk0jXVrEZodBHt
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -293,6 +367,18 @@ fetch('https://script.google.com/macros/s/AKfycbxCnsQ04XGaKrzsZnqrmVxFwLKhCEYy5y
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -340,6 +426,18 @@ fetch('https://script.google.com/macros/s/AKfycbzk1ZSPQf7BO27rweBUIQNq2MG6R27Dl7
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -387,6 +485,18 @@ fetch('https://script.google.com/macros/s/AKfycbxvohQJb4ZeUaI8k-6ulId4ClGvFSn1OU
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
@@ -434,6 +544,18 @@ fetch('https://script.google.com/macros/s/AKfycbzRFaTbH03-WBFVEx0P9Mr8NbEyCG2B1U
     return response.json();})
 .then(data => {
     // console.log(data[0]);
+    let length = datas.length;
+    let j=0;
+    let data = [];
+    for(var i=0;i<length;i++){
+        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
+            
+        }
+        else{
+            data[j] = datas[i]
+            j++
+        }
+    }
     const html = data.map((img, i) =>{
         return `
         <div class="col">
