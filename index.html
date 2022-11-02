@@ -1,12 +1,15 @@
 <!doctype html>
-<html lang="en"></html>
-               
-            
+<html lang="en">
+
+</html>
+
+
 <head>
-        <title>Premium Deluxe MotorSport</title>
-        <meta property="og:title" content="BBRP - Premium Deluxe MotorSport">
-        <meta property="og:description" content="Official Website for Premium Deluxe MotorSport Catalog">
-        <meta property="og:image" content="https://static.wikia.nocookie.net/gtawiki/images/1/1d/PremiumDeluxeMotorsport-GTAOe-Logo.png">
+    <title>Premium Deluxe MotorSport</title>
+    <meta property="og:title" content="BBRP - Premium Deluxe MotorSport">
+    <meta property="og:description" content="Official Website for Premium Deluxe MotorSport Catalog">
+    <meta property="og:image"
+        content="https://static.wikia.nocookie.net/gtawiki/images/1/1d/PremiumDeluxeMotorsport-GTAOe-Logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -31,6 +34,7 @@
         html {
             cursor: url(IMAGES/cursor.png), url(IMAGES/cursor.png), auto;
         }
+
         header {
             position: relative;
             background-color: black;
@@ -140,32 +144,32 @@
 
 </head>
 <style>
-    #loading{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #fff
-    url('https://cdn.shopify.com/s/files/1/0573/2689/5255/t/30/assets/loader.gif?v=9201915632220898561659685600')
-     no-repeat center center;	
-    z-index: 999999;
- }
- </style>
- 
-    <body onload="myFunction()" >
-       <div id="loading">
- </div>
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff url('https://cdn.shopify.com/s/files/1/0573/2689/5255/t/30/assets/loader.gif?v=9201915632220898561659685600') no-repeat center center;
+        z-index: 999999;
+    }
+</style>
+
+<body onload="myFunction()">
+    <div id="loading">
+    </div>
     <script>
-       // $(document).ready(function(){
-          // 	$('div#loading').removeAttr('id');
-       // });
-       var preloader = document.getElementById("loading");
-       // window.addEventListener('load', function(){
-       // 	preloader.style.display = 'none';
-       // 	})
-    
-       function myFunction(){
-          setTimeout(function(){ preloader.style.display = 'none'; }, 2000);
-       };
+        // $(document).ready(function(){
+        // 	$('div#loading').removeAttr('id');
+        // });
+        var preloader = document.getElementById("loading");
+        // window.addEventListener('load', function(){
+        // 	preloader.style.display = 'none';
+        // 	})
+
+        function myFunction() {
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 2000);
+        };
     </script>
 
 
@@ -185,76 +189,81 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <img src="css/PremiumDeluxeMotorsport-GTAOe-Logo.webp" style="transform: rotate(-3deg)" width="420px">
+                    <img src="css/PremiumDeluxeMotorsport-GTAOe-Logo.webp" style="transform: rotate(-3deg)"
+                        width="420px">
                 </div>
             </div>
-        </div>        
+        </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Container wrapper -->
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01"
-            aria-controls="navbarExample01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarExample01">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
 
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" onclick="compactcars()">Compact</a>
-              </li>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
 
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" onclick="Suv()">Suv</a>
-              </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" onclick="compactcars()">Compact</a>
+                    </li>
 
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" onclick="sedan()">Sedan</a>
-              </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" onclick="Suv()">Suv</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="Supercars()">Super</a>
-              </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" onclick="sedan()">Sedan</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="sport()">Sport</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="Supercars()">Super</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="sportc()">Sport Classic</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="sport()">Sport</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="offroad()">Offroad</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="sportc()">Sport Classic</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="muscle()">Muscle</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="offroad()">Offroad</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="vans()">Vans</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="muscle()">Muscle</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="moto()">MotorCycle</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="vans()">Vans</a>
+                    </li>
 
-              <li class="nav-item">
-                <a class="nav-link" onclick="edm()">⭐EDM</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="moto()">MotorCycle</a>
+                    </li>
 
-            </ul>
-          </div>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="edm()">⭐EDM</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
         </div>
-      </nav>
+        <!-- Container wrapper -->
+    </nav>
+
 
 
     <div class="album py-5 bg-light">
@@ -323,6 +332,19 @@
 
     <footer class="text-muted py-5">
         <div class="container">
+            <div style="display: flex;">
+                <a onclick="compactcars();" style="color:blue"> Compact &nbsp</a> |&nbsp
+                <a onclick="Suv();" style="color:blue"> Suv &nbsp</a> |&nbsp
+                <a onclick="sedan();" style="color:blue"> Sedan &nbsp</a> |&nbsp
+                <a onclick="Supercars();" style="color:blue"> Super &nbsp</a> |&nbsp
+                <a onclick="sport();" style="color:blue"> Sport &nbsp</a> |&nbsp
+                <a onclick="sportc();" style="color:blue"> Sport Classic &nbsp</a> |&nbsp
+                <a onclick="offroad();" style="color:blue"> Offroad &nbsp</a> |&nbsp
+                <a onclick="muscle();" style="color:blue"> Muscle &nbsp</a> |&nbsp
+                <a onclick="vans();" style="color:blue"> Vans &nbsp</a> |&nbsp
+                <a onclick="moto();" style="color:blue"> MotorCycle &nbsp</a> |&nbsp
+                <a onclick="edm();" style="color:blue"> ⭐EDM &nbsp</a>
+            </div>
             <p class="float-end mb-1">
                 <a href="#">Back to top</a>
             </p>
@@ -350,6 +372,7 @@
         document.getElementById("sedan").style.display = "none";
         document.getElementById("edm").style.display = "none";
         document.getElementById("compact").style.display = "flex";
+
         function compactcars() {
             audioElement.play();
             document.getElementById("super").style.display = "none";
@@ -379,6 +402,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("super").style.display = "flex";
         }
+
         function sport() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -393,6 +417,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("sport").style.display = "flex";
         }
+
         function moto() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -407,6 +432,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("moto").style.display = "flex";
         }
+
         function sportc() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -421,6 +447,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("sportc").style.display = "flex";
         }
+
         function Suv() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -436,6 +463,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "flex";
         }
+
         function offroad() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -451,6 +479,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
+
         function muscle() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -466,6 +495,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
+
         function vans() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -481,6 +511,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
+
         function sedan() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
@@ -496,6 +527,7 @@
             document.getElementById("edm").style.display = "none";
             document.getElementById("Suv").style.display = "none";
         }
+
         function edm() {
             audioElement.play();
             document.getElementById("compact").style.display = "none";
