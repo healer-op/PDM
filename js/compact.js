@@ -537,64 +537,7 @@ fetch('https://script.google.com/macros/s/AKfycbxvohQJb4ZeUaI8k-6ulId4ClGvFSn1OU
     document.querySelector("#vans").insertAdjacentHTML("afterbegin", html);
 })
 
-fetch('https://script.google.com/macros/s/AKfycbwpTWEeLHdIQisqXL_dpF9NgQExZ9DAJhg79HGqHDJjDd-Y0bPs3duQf7ERBVUooPKo/exec')
-.then(response =>{
-    if(!response.ok){
-        throw Error("ERROR");
-    }
-    return response.json();})
-.then(datas => {
-    // console.log(data[0]);
-    let length = datas.length;
-    let j=0;
-    let data = [];
-    for(var i=0;i<length;i++){
-        if(datas[i].Stock=="X" || datas[i].Stock=="x"){
-            
-        }
-        else{
-            data[j] = datas[i]
-            j++
-        }
-    }
-    const html = data.map((img, i) =>{
-        return `
-        <div class="col" onclick="clicksound.play();">
-                        <div class="card shadow-sm">
-                            <img class="card-img-top"
-                                src="${data[i].Picture}"
-                                width="100%" height="225">
-                            <div class="card-body">
-                                <p>${data[i].Car_made} <b>${data[i].Model_Name}</b></p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="display:flex"><b>Finance
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
-                                    <p>${data[i].Finance}</p>
-                                </li>
-                                <li class="list-group-item" style="display:flex"><b>Finance 8w&nbsp&nbsp:&nbsp</b>
-                                    <p>${data[i].weeks}</p>
-                                </li>
-                                <li class="list-group-item" style="display:flex"><b>Drivetrain &nbsp&nbsp&nbsp:&nbsp</b>
-                                    <p>${data[i].Drivetrain}</p>
-                                </li>
-                                <li class="list-group-item" style="display:flex"><b>Capacity
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
-                                    <p>${data[i].Capacity}</p>
-                                </li>
-                                <li class="list-group-item" style="display:flex"><b>SpawnCode
-                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp</b>
-                                    <p>${data[i].SpawnCode}</p>
-                                </li>
-                            </ul>
-                            <div class="card-footer">
-                                <small class="text"><b>================= ${data[i].Price}</b></small>
-                            </div>
-                        </div>
-                    </div>`;
-    }).join('');
-    document.querySelector("#edm").insertAdjacentHTML("afterbegin", html);
-})
+
 
 fetch('https://script.google.com/macros/s/AKfycbzRFaTbH03-WBFVEx0P9Mr8NbEyCG2B1Ugvy4qF42yL2m3T-2J_vvQx9zeAqhsO6CMs/exec')
 .then(response =>{
